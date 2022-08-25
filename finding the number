@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{int arr[20],i,n,x,flag=0;
+printf("enter a number");
+scanf("%d",&n);
+printf("enter a list ");
+for(i=0;i<n;i++)
+{
+    scanf("%d",&arr[i]);
+}
+printf("the list is ");
+for(i=0;i<n;i++)
+{
+    printf("%d ",arr[i]);
+}
+printf("enter a finding number is ");
+scanf("%d",&x);
+for(i=0;i<n;i++)
+{if(arr[i]==x)
+{ flag=1;
+    printf("%d",flag);
+    printf("the index of finding number is %d",i);
+    break;
+}
+}if(flag==0)
+{
+        printf("not found");
+    }
+    return 0;
+}
